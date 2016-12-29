@@ -134,7 +134,8 @@
                 <h2>Future Plans</h2>
                 <p>I am currently looking for beginning projects to work on. I am currently searching for a Web Development position and want to build my portfolio. While searching for a job I plan on learning as much as I can about Web Development and Freelancing
                     where possible.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                <p><button class="btn btn-default" role="button" id="secretbutton">View details &raquo;</button></p>
+                <a type="button" id="unlocked" class="hiddenLink" href="kodePlayer.html">Welcome</a>
             </div>
         </div>
 
@@ -142,6 +143,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+        $("#secretbutton").click(function(){
+          var codes = prompt("Enter code")
+          if (codes == "carter"){
+              $("#unlocked").show()
+          }
+          else{
+              alert("There are no droids here.")
+          }
+
+          })
+        </script>
 
 
 </body>

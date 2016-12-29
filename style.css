@@ -22,3 +22,6 @@ body{
   height: 500px;
   max-width: none;
 }
+.hiddenLink{
+  display: none;
+}
