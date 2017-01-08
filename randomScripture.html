@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>Random Scripture</title>
+
+    <style media="screen">
+      #container{
+        width: 100%;
+        height: 100%;
+      }
+      #displayBox{
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        margin: 0 auto;
+        padding: 100px;
+        border: darkblue solid 4px;
+      }
+      #sideMenu{
+        width: 150px;
+        height: 500px;
+        background-color: yellow;
+        float: left;
+        margin: 50px 0 0 200px;
+      }
+      .clearFloat{
+        clear: both;
+      }
+      .menuButton{
+        width: 80px;
+        margin: 5px 30px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<div id="container">
+  <h1>Scripture Generator</h1>
+  <div id="sideMenu">
+    <div class="clearFloat"></div>
+    <button type="button" class="menuButton" id ="BOMbutton">BOM</button>
+    <button type="button" class="menuButton" id ="DCbutton">DC</button>
+    <button type="button" class="menuButton" id ="Peralbutton">Pearl</button>
+    <button type="button" class="menuButton" id ="NewTestbutton">New Test</button>
+    <button type="button" class="menuButton" id ="OldTestbutton">Old Test</button>
+
+  </div>
+  <div id="displayBox">
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  document.getElementById("BOMbutton").onclick = function(){
+    $.ajax("BOM.pdf").done(function(data) {
+        $("#displayBox").html(data) ;
+    }).fail(function() {
+        alert("Could not get data");
+    });
+  }
+</script>
+
+  </body>
+</html>

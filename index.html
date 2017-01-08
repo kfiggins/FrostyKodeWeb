@@ -1,163 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>FrostyKode</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--Icon  -->
     <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+        .jumbotron {
+            background-image: url("images/jumboBackground2.jpg");
+            background-size: cover;
+            height: 650px;
+            color: white;
+        }
+
+        #footer {
+            height: 300px;
+            background-color: #F5F5F5;
+            margin-top: 40px;
+        }
+
+        .cardimages {
+            width: 100%;
+        }
+    </style>
+
 </head>
 
 <body>
-    <!--
-    <div id="banner">
-        <img id="logo123" src="logo.png" alt="">
-    </div>
--->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-                <a class="navbar-brand" href="#">FrostyKode</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <!-- Take out these links for now
-                     <li class="active"><a href="#">Link 1 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link 2</a></li>
-                  -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="reactionGame.html">Reaction Game</a></li>
-                            <li><a href="formValidation.html">Form Validation Project</a></li>
-                            <li><a href="https://www.udemy.com/the-complete-web-developer-course-2/">Best Web Dev Course</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="https://www.nhl.com/blackhawks">Best Hockey Team</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="https://www.youtube.com/user/learncodeacademy">Best YouTube Channel for Web Dev</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+        <a class="navbar-brand" href="index.html">
+            <img src="icon.png" width="30" height="30" class="d-inline-block align-top" alt=""> FrostyKode
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="reactionGame.html">Reaction Game</a>
+                        <a class="dropdown-item" href="formValidation.html">Form Validation Project</a>
+                        <a class="dropdown-item" href="snakeGame.html">First Snake Game</a>
+                        <a class="dropdown-item" href="kodePlayer.html">Code Player</a>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-                <!-- Take out navbar right for now
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link 3</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
                     </li>
-                </ul>
-              -->
-            </div>
-            <!-- /.navbar-collapse -->
+            </ul>
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="images/1.jpg" alt="First slide">
-            </div>
-            <div class="item">
-                <img src="images/2.jpg" alt="Second slide">
-            </div>
-            <div class="item">
-                <img src="images/3.jpg" alt="Third slide">
-            </div>
-        </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="icon-prev" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="icon-next" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
     <div class="jumbotron">
-        <div class="container">
-            <h1>Welcome to FrostyKode</h1>
-            <p>Hi, my name is Kyler and I am the creator of FrostyKode. I am a self taught Web Developer who started learning how to program a year ago. Check out the projects I have been working on.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        </div>
+        <h1 class="display-3">FrostyKode</h1>
+        <p class="lead">Welcome to my portfolio. My name is Kyler and I'm aspiring to be a Web Developer.</p>
+        <hr class="my-4">
+        <p>Check out my projects in the dropdown above. If you want to learn more, click the button below.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
     </div>
 
     <div class="container">
-        <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-4">
-                <h2>Where I Started</h2>
-                <p>My first language I chose to learn was Python. I had never programmed before and after college finals I decided to spend my Christmas break learning Python. I loved it!! I tried to learn it from many angles. I used codeacademy to begin
-                    learning the basic syntax and basic concepts. I continued to look for books and other online courses to continue learning. I would also give myself my own projects to challenge myself. I began to use Python for data analysis and loved
-                    it. I thought I wanted to do data analysis but found my favorite part was the programming. Finally Novmeber of 2016 I decided to switch to Web Development and I've never looked back.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="col-lg-4">
+                <div class="card card-block">
+                    <img class="card-img-top cardimages" src="images/card_1.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"><i class="fa fa-snowflake-o" aria-hidden="true"></i> Snowboarding</h4>
+                        <p class="card-text">I live in Utah which is home to some of the best ski resorts in the world! My favorite place to go is Park City Mountain Resort. </p>
+                        <a href="http://www.parkcitymountain.com/" class="btn btn-primary">Park City Mountain</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h2>Favorite Courses</h2>
-                <p>I think CodeAcademy is great for beginners. My favorite class at the moment is the Complete Web Development Course 2.0 by Rob Percival. It is fairly up to date and Rob explains things in a spectacular easy to understand way.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="col-lg-4">
+                <div class="card card-block">
+                    <img class="card-img-top cardimages" src="images/card_2.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"><i class="fa fa-bicycle" aria-hidden="true"></i> Mountain Biking</h4>
+                        <p class="card-text">When the snow melts you will find me in the mountains with my bike. Try the Wasatch Crest Trail in Salt Lake for a great ride. </p>
+                        <a href="https://www.mtbproject.com/trail/3654027/wasatch-crest" class="btn btn-primary">Wasatch Crest</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h2>Future Plans</h2>
-                <p>I am currently looking for beginning projects to work on. I am currently searching for a Web Development position and want to build my portfolio. While searching for a job I plan on learning as much as I can about Web Development and Freelancing
-                    where possible.</p>
-                <p><button class="btn btn-default" role="button" id="secretbutton">View details &raquo;</button></p>
-                <a type="button" id="unlocked" class="hiddenLink" href="kodePlayer.html">Welcome</a>
+            <div class="col-lg-4">
+                <div class="card card-block">
+                    <img class="card-img-top cardimages" src="images/card_3.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"><i class="fa fa-child" aria-hidden="true"></i> Hiking</h4>
+                        <p class="card-text">When the bike is not allowed I go on foot up my favorite mountains. Timpanogos is a great hike if you leave in time to see the sunrise!</p>
+                        <a href="http://www.alltrails.com/trail/us/utah/timpooneke-trail" class="btn btn-primary">Timpanogos Trail</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <div id="footer">
+        <div class="col-sm-6">
 
-        <script type="text/javascript">
-        $("#secretbutton").click(function(){
-          var codes = prompt("Enter code")
-          if (codes == "carter"){
-              $("#unlocked").show()
-          }
-          else{
-              alert("There are no droids here.")
-          }
-
-          })
-        </script>
-
-
+        </div>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
 </html>
